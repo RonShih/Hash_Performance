@@ -8,9 +8,9 @@ SHA-1 --> from openSSL
 CRC32 --> from zlib  
 
 - Compile command:  
-'''
+***
 gcc test.c -o test LDFLAGS CPPFLAGS -lcrypto -lz  
-'''
+***
   - You can check LDFLAGS and CPPFLAGS throught command "brew info openssl"  
   - Using -lz to link zlib.h  
 
