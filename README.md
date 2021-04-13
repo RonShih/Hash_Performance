@@ -1,8 +1,8 @@
 # SHA1vsCRC32
 
-SHA-1 and CRC32 are widely implemented in data deduplication on storage system.  
-This program simply evaluates SHA-1 and CRC32 performance with different buffer size.  
-Markdown will be added in the future.  
+>SHA-1 and CRC32 are widely implemented in data deduplication on storage system.  
+>This program simply evaluates SHA-1 and CRC32 performance with different buffer size.  
+>Markdown will be added in the future.  
 
 >OS --> macOS  
 >SHA-1 --> from openSSL  
