@@ -7,14 +7,14 @@ OS --> macOS
 SHA-1 --> from openSSL  
 CRC32 --> from zlib  
 
-- Compile command:  
+1. Compile command:  
 ***
 gcc test.c -o test LDFLAGS CPPFLAGS -lcrypto -lz  
 ***
   - You can check LDFLAGS and CPPFLAGS throught command "brew info openssl"  
   - Using -lz to link zlib.h  
 
-- Run the program:  
+2. Run the program:  
 ***
 ./test <InputFile chunksize(KB)  
 ***
@@ -22,7 +22,7 @@ gcc test.c -o test LDFLAGS CPPFLAGS -lcrypto -lz
   - Usually the multiples of 512B, such as 0.5KB (512Byte sector on disk), 4kB (4kB page on flash)  
 
 
-- Here's the example:  
+3. Here's the example:  
 ***
 gcc test.c -o test -L/usr/local/opt/openssl@1.1/lib -I/usr/local/opt/openssl@1.1/include -lcrypto -lz  
 ./test <linux-5.3.5.tar.xz 0.5
