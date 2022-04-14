@@ -1,4 +1,4 @@
-# SHA1 v.s CRC32
+# SHA1 vs. CRC32
 
 SHA-1 and CRC32 are widely implemented in __data deduplication__ on storage system.  
 This program simply evaluates SHA-1 and CRC32 performance with different chunk size.
