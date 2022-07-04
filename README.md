@@ -16,6 +16,8 @@ sudo apt-get install libssl-dev
 gcc test.c -o test LDFLAGS CPPFLAGS -lcrypto -lz  
 ```
 * Check LDFLAGS and CPPFLAGS by command "brew info openssl"  
+* LDFLAGS default might be -L/usr/local/opt/openssl@1.1/lib 
+* CPPFLAGS default might be -I/usr/local/opt/openssl@1.1/include
 * -lz to link zlib.h  
 
 ## Run the program:  
