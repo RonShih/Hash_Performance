@@ -3,19 +3,16 @@
 SHA-1 and CRC32 are widely implemented in __data deduplication__ on storage system.  
 This program simply evaluates SHA-1 and CRC32 performance with different chunk size.
 
-Environment: macOS on intel mac  
-Library: `openSSL`(SHA-1), `zlib`(CRC32)
-
-dowload zlib
-```
-sudo apt-get install libz-dev
-```
-
-download openSSL
-```
-sudo apt-get install libssl-dev
-```
-
+## Environment: macOS on m1 mac or ubuntu  
+* Library: `openSSL`(SHA-1), `zlib`(CRC32)
+ * dowload zlib
+ ```
+ sudo apt-get install libz-dev
+ ```
+ * download openSSL
+ ```
+ sudo apt-get install libssl-dev
+ ```
 ## Compile command:  
 ```
 gcc test.c -o test LDFLAGS CPPFLAGS -lcrypto -lz  
