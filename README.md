@@ -6,6 +6,11 @@ This program simply evaluates SHA-1 and CRC32 performance with different chunk s
 Environment: macOS on intel mac  
 Library: `openSSL`(SHA-1), `zlib`(CRC32)
 
+dowload zlib
+```
+sudo apt-get install libz-dev
+```
+
 download openSSL
 ```
 sudo apt-get install libssl-dev
